@@ -1,0 +1,111 @@
+.category-box {
+    height: 400px;
+    width: 90%;
+    margin: auto;
+}
+
+.category-box .cate-boxes {
+    display: grid;
+    grid-template-columns: repeat(6, 2fr);
+    gap: 10px;
+}
+
+.category-box .cate-boxes .cat-box {
+    display: inline-block;
+    width: 100%;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1;
+    transition: 0.5s ease-in-out;
+    border-radius: 5px;
+}
+
+
+.category-box .cate-boxes .cat-box .box-img {
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid; */
+    height: 129px;
+    background-color: #dff0f18f;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.167);
+}
+
+.category-box .cate-boxes .cat-box .box-img img {
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    transition: all 0.5s ease-in-out;
+}
+
+.cat-box p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 8px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+/*-------------------dryf-boxex */
+
+.dry-fruits {
+    height: 800px;
+    width: 90%;
+    margin: auto;
+}
+
+.dry-fruits .dryf-boxes {
+    display: grid;
+    grid-template-columns: repeat(6, 2fr);
+    gap: 10px;
+}
+
+.dry-fruits .dryf-boxes .dryf-box {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1;
+    transition: 0.5s ease-in-out;
+    border-radius: 5px;
+    background-color: #dff0f18f;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.167);
+    align-items: center;
+}
+
+
+.dry-fruits .dryf-boxes .dryf-box .dryf-img {
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid; */
+    height: 129px;
+
+}
+
+.dry-fruits .dryf-boxes .dryf-box .dryf-img img {
+    width: 50%;
+    margin: auto;
+    transition: all 0.5s ease-in-out;
+}
+
+.dryf-box h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin-top: 10px;
+
+}
+
+
+
+@media screen and (max-width:800px) {
+    .category-box .cate-boxes {
+        display: grid;
+        grid-template-columns: repeat(4, 3fr);
+        gap: 10px;
+    }
+
+    .dry-fruits .dryf-boxes {
+        display: grid;
+        grid-template-columns: repeat(4, 3fr);
+        gap: 10px;
+    }
+}

@@ -1,0 +1,211 @@
+.main-container {
+    height: 100vh;
+}
+
+.main-img {
+    padding: 5px;
+}
+
+.main-img img {
+    width: 100%;
+    /* height: auto; */
+}
+
+.products {
+    width: 90%;
+    margin: auto;
+}
+
+.products .organic-products {
+    height: 342px;
+    overflow: hidden;
+}
+
+.products .organic-products .boxes {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    height: 323px;
+    overflow-x: auto;
+}
+
+.products .organic-products .boxes .box {
+    display: block;
+    flex-shrink: 0;
+    border: 3px solid rgb(214 214 214);
+    width: 212px;
+    height: 280px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1;
+    transition: 0.5s ease-in-out;
+    border-radius: 5px;
+    border: 2px solid rgb(179, 178, 178);
+}
+
+.products .organic-products .boxes .box:hover {
+    scale: 1.02;
+}
+
+.products .organic-products .boxes .box .inner-box {
+    padding: 10px;
+
+}
+
+.products .organic-products .boxes .box .inner-box .box-img {
+    display: flex;
+    justify-content: center;
+}
+
+.products .organic-products .boxes .box .inner-box .box-img img {
+    height: 60%;
+    width: 60%;
+    margin: auto;
+    transition: all 0.5s ease-in-out;
+}
+
+.products .organic-products .boxes .box .inner-box .box-img img:hover {
+    scale: 1.1;
+}
+
+.products .organic-products .boxes .box .inner-box .title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.products .organic-products .boxes .box .inner-box .price {
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.products .organic-products .boxes .box .inner-box .price .o-price {
+    font-size: 10px;
+    color: gray;
+    text-decoration: line-through;
+}
+
+.products .organic-products .boxes .box .discount {
+    background-color: green;
+    display: inline-block;
+    color: white;
+    width: 50%;
+    border-radius: 0px 30px 30px 0px;
+    padding: 8px;
+    text-align: center;
+    /* margin-bottom: 5px; */
+    font-weight: bold;
+}
+
+.products .organic-products .boxes .box .inner-box .box-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products .organic-products .boxes .box .inner-box .box-footer button {
+    width: 50%;
+    border: none;
+    color: #00ab66;
+    font-size: 1.8rem;
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: #eff9f8;
+}
+
+
+@media screen and (max-width:800px) {
+    .main-img {
+        margin-top: 40px;
+    }
+
+    .products .organic-products .boxes {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+        overflow-x: auto;
+        height: 400px;
+    }
+
+    .products .organic-products .boxes .box {
+        display: block;
+        flex-shrink: 0;
+        box-shadow: 0px 3px 11px #7f6969;
+        width: 212px;
+        height: 280px;
+        border-radius: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1;
+        transition: 0.5s ease-in-out;
+        border-radius: 5px;
+    }
+
+    .products .organic-products .boxes .box:hover {
+        scale: 1.02;
+    }
+
+    .products .organic-products .boxes .box .inner-box {
+        padding: 10px;
+
+    }
+
+    .products .organic-products .boxes .box .inner-box .box-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .products .organic-products .boxes .box .inner-box .box-img img {
+        height: 60%;
+        width: 60%;
+        margin: auto;
+        transition: all 0.5s ease-in-out;
+    }
+
+
+    .products .organic-products .boxes .box .inner-box .title {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .products .organic-products .boxes .box .inner-box .price {
+        font-size: 13px;
+        font-weight: bold;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .products .organic-products .boxes .box .inner-box .price .o-price {
+        font-size: 10px;
+        color: gray;
+        text-decoration: line-through;
+    }
+
+    .products .organic-products .boxes .box .discount {
+        background-color: green;
+        display: inline-block;
+        color: white;
+        border-radius: 0px 0px 30px 0px;
+        padding: 8px;
+        /* margin-bottom: 5px; */
+        font-weight: bold;
+    }
+
+    .products .organic-products .boxes .box .inner-box .box-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .products .organic-products .boxes .box .inner-box .box-footer button {
+        width: 50%;
+        background-color: rgb(223, 239, 223);
+        border: none;
+        color: green;
+        font-size: 19px;
+        border-radius: 40px;
+        box-shadow: 0px 1px 3px #7e6969;
+    }
+
+}

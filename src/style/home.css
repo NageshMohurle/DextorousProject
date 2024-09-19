@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+nav {
+    background-color: #00ab66;
+    height: 67px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.middle-nav {
+    display: flex;
+    gap: 10px;
+}
+
+.middle-nav .location-box {
+    display: flex;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 10px;
+    align-items: center;
+    height: 43px;
+}
+
+.middle-nav .location-box button {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.middle-nav .location-box .location-text {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.middle-nav .search-box input {
+    height: 40px;
+    width: 300px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.middle-nav .search-box input::placeholder {
+    padding: 5px;
+    color: white;
+}
+
+.middle-nav .search-box button {
+    height: 43px;
+    width: 50px;
+    color: white;
+    border-radius: 0px 5px 5px 0px;
+    background-color: rgb(243, 150, 54);
+    border-color: rgb(243, 150, 54);
+}
+
+.end-nav {
+    display: flex;
+    gap: 30px;
+    color: white;
+}
+
+.end-nav .cart-p {
+    position: relative;
+}
+
+.end-nav .cart-p .cart {
+    position: absolute;
+    top: -10px;
+    display: inline-block;
+    width: 15px;
+    text-align: center;
+    border-radius: 1px;
+    background-color: rgb(243, 150, 54);
+}
+
+.for-mobile {
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    .for-laptop {
+        display: none;
+
+    }
+
+    .for-mobile {
+        display: flex;
+        background-color: white;
+        margin-bottom: 30px;
+        background-color: white;
+    }
+
+    .middle-nav {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin: auto;
+        position: fixed;
+        margin-top: 42px;
+        background-color: white;
+    }
+
+    .middle-nav .location-box {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0px;
+
+    }
+
+    .middle-nav .location-box div {
+        display: flex;
+        border: 1px solid white;
+        border-radius: 5px;
+        gap: 10px;
+        align-items: center;
+        height: 43px;
+        justify-content: space-between;
+
+    }
+
+    .middle-nav .location-box button {
+        padding: 5px;
+        font-size: 16px;
+        color: green;
+    }
+
+    .middle-nav .location-box div .location-text {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        color: black;
+
+    }
+
+    .middle-nav .search-box {
+        display: flex;
+        margin: auto;
+        width: 100%;
+    }
+
+    .middle-nav .search-box input {
+        height: 40px;
+        width: 90%;
+        margin: auto;
+        background-color: transparent;
+        border: 1px solid black;
+        border-radius: 5px 0px 0px 5px;
+    }
+
+    .middle-nav .search-box input::placeholder {
+        padding: 5px;
+        color: black;
+    }
+
+    .middle-nav .search-box button {
+        height: 43px;
+        width: 50px;
+        border-radius: 0px 5px 5px 0px;
+        background-color: green;
+        border-color: green;
+    }
+
+}
